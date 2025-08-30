@@ -16,10 +16,10 @@
         };
     </script>
 </head>
-<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen font-sans antialiased pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)]">
-    <div class="container max-w-screen-xl mx-auto px-3 sm:px-4 lg:px-6 py-6 sm:py-8">
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
         <div class="text-center mb-8">
-            <h1 class="text-3xl sm:text-4xl font-bold text-indigo-800 mb-4">🧮 Aljabar 2</h1>
+            <h1 class="text-4xl font-bold text-indigo-800 mb-4">🧮 Aljabar 2</h1>
             <div class="flex justify-center mb-4">
                 <img src="https://raw.githubusercontent.com/mathnology/Penelitian-Relevan/refs/heads/main/gif%20mathnology.gif" 
                      alt="Mathnology Animation" 
@@ -28,32 +28,32 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-6 sm:mb-8">
-            <button onclick="showProblem($1, event)" class="problem-btn w-full transition-transform active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 mb-8">
+            <button onclick="showProblem(1)" class="problem-btn bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-4 rounded-lg transition-colors">
                 Soal 1: Sistem Persamaan
             </button>
-            <button onclick="showProblem($1, event)" class="problem-btn w-full transition-transform active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">
+            <button onclick="showProblem(2)" class="problem-btn bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-4 rounded-lg transition-colors">
                 Soal 2: Substitusi
             </button>
-            <button onclick="showProblem($1, event)" class="problem-btn w-full transition-transform active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">
+            <button onclick="showProblem(3)" class="problem-btn bg-purple-500 hover:bg-purple-600 text-white font-semibold py-3 px-4 rounded-lg transition-colors">
                 Soal 3: Akar Bersarang
             </button>
-            <button onclick="showProblem($1, event)" class="problem-btn w-full transition-transform active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">
+            <button onclick="showProblem(4)" class="problem-btn bg-red-500 hover:bg-red-600 text-white font-semibold py-3 px-4 rounded-lg transition-colors">
                 Soal 4: Identitas Aljabar
             </button>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-6 sm:mb-8">
-            <button onclick="showProblem($1, event)" class="problem-btn w-full transition-transform active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 mb-8">
+            <button onclick="showProblem(5)" class="problem-btn bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-3 px-4 rounded-lg transition-colors">
                 Soal 5: Sistem Linear
             </button>
-            <button onclick="showProblem($1, event)" class="problem-btn w-full transition-transform active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">
+            <button onclick="showProblem(6)" class="problem-btn bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 px-4 rounded-lg transition-colors">
                 Soal 6: Eksponen
             </button>
-            <button onclick="showProblem($1, event)" class="problem-btn w-full transition-transform active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">
+            <button onclick="showProblem(7)" class="problem-btn bg-teal-500 hover:bg-teal-600 text-white font-semibold py-3 px-4 rounded-lg transition-colors">
                 Soal 7: Akar Kuadrat
             </button>
-            <button onclick="showProblem($1, event)" class="problem-btn w-full transition-transform active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">
+            <button onclick="showProblem(8)" class="problem-btn bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-4 rounded-lg transition-colors">
                 Soal 8: Identitas Perkalian
             </button>
         </div>
@@ -89,11 +89,11 @@
                 problem: `
                     <div class="bg-gray-50 p-4 rounded-lg mb-4">
                         <p class="mb-2">Jika $a$ dan $b$ bilangan asli yang memenuhi $a+b=14$ dan $a^2-b^2=28$, maka nilai $a^2+b^2$ adalah ...</p>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 mt-3">
-                            <button onclick="checkAnswer($1, '$2', event)" class="answer-btn w-full min-h-12 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">A. 70</button>
-                            <button onclick="checkAnswer($1, '$2', event)" class="answer-btn w-full min-h-12 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">B. 85</button>
-                            <button onclick="checkAnswer($1, '$2', event)" class="answer-btn w-full min-h-12 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">C. 90</button>
-                            <button onclick="checkAnswer($1, '$2', event)" class="answer-btn w-full min-h-12 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">D. 100</button>
+                        <div class="grid grid-cols-2 gap-2 mt-3">
+                            <button onclick="checkAnswer(1, 'A')" class="answer-btn bg-gray-200 hover:bg-blue-200 p-2 rounded">A. 70</button>
+                            <button onclick="checkAnswer(1, 'B')" class="answer-btn bg-gray-200 hover:bg-blue-200 p-2 rounded">B. 85</button>
+                            <button onclick="checkAnswer(1, 'C')" class="answer-btn bg-gray-200 hover:bg-blue-200 p-2 rounded">C. 90</button>
+                            <button onclick="checkAnswer(1, 'D')" class="answer-btn bg-gray-200 hover:bg-blue-200 p-2 rounded">D. 100</button>
                         </div>
                     </div>
                 `,
@@ -136,11 +136,11 @@
                         <p class="mb-2">Jika $(2,3)$ merupakan penyelesaian dari sistem persamaan linear:</p>
                         <p class="text-center mb-2">$\\begin{cases} ax-3y=-7\\\\ 3x+by=18 \\end{cases}$</p>
                         <p class="mb-2">maka $\\frac{b}{a} = ...$</p>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 mt-3">
-                            <button onclick="checkAnswer($1, '$2', event)" class="answer-btn w-full min-h-12 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">A. $\\frac{1}{4}$</button>
-                            <button onclick="checkAnswer($1, '$2', event)" class="answer-btn w-full min-h-12 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">B. $-\\frac{1}{4}$</button>
-                            <button onclick="checkAnswer($1, '$2', event)" class="answer-btn w-full min-h-12 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">C. $-4$</button>
-                            <button onclick="checkAnswer($1, '$2', event)" class="answer-btn w-full min-h-12 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">D. $4$</button>
+                        <div class="grid grid-cols-2 gap-2 mt-3">
+                            <button onclick="checkAnswer(2, 'A')" class="answer-btn bg-gray-200 hover:bg-green-200 p-2 rounded">A. $\\frac{1}{4}$</button>
+                            <button onclick="checkAnswer(2, 'B')" class="answer-btn bg-gray-200 hover:bg-green-200 p-2 rounded">B. $-\\frac{1}{4}$</button>
+                            <button onclick="checkAnswer(2, 'C')" class="answer-btn bg-gray-200 hover:bg-green-200 p-2 rounded">C. $-4$</button>
+                            <button onclick="checkAnswer(2, 'D')" class="answer-btn bg-gray-200 hover:bg-green-200 p-2 rounded">D. $4$</button>
                         </div>
                     </div>
                 `,
@@ -185,11 +185,11 @@
                     <div class="bg-gray-50 p-4 rounded-lg mb-4">
                         <p class="mb-2">Jika $a=\\sqrt{90+\\sqrt{90+\\sqrt{90+\\cdots}}}$ dan $b=\\sqrt{42-\\sqrt{42-\\sqrt{42-\\cdots}}}$,</p>
                         <p class="mb-2">maka nilai $\\frac{2a+b}{2b+1} = ...$</p>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 mt-3">
-                            <button onclick="checkAnswer($1, '$2', event)" class="answer-btn w-full min-h-12 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">A. 1</button>
-                            <button onclick="checkAnswer($1, '$2', event)" class="answer-btn w-full min-h-12 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">B. 2</button>
-                            <button onclick="checkAnswer($1, '$2', event)" class="answer-btn w-full min-h-12 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">C. 3</button>
-                            <button onclick="checkAnswer($1, '$2', event)" class="answer-btn w-full min-h-12 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">D. 4</button>
+                        <div class="grid grid-cols-2 gap-2 mt-3">
+                            <button onclick="checkAnswer(3, 'A')" class="answer-btn bg-gray-200 hover:bg-purple-200 p-2 rounded">A. 1</button>
+                            <button onclick="checkAnswer(3, 'B')" class="answer-btn bg-gray-200 hover:bg-purple-200 p-2 rounded">B. 2</button>
+                            <button onclick="checkAnswer(3, 'C')" class="answer-btn bg-gray-200 hover:bg-purple-200 p-2 rounded">C. 3</button>
+                            <button onclick="checkAnswer(3, 'D')" class="answer-btn bg-gray-200 hover:bg-purple-200 p-2 rounded">D. 4</button>
                         </div>
                     </div>
                 `,
@@ -236,11 +236,11 @@
                     <div class="bg-gray-50 p-4 rounded-lg mb-4">
                         <p class="mb-2">Jika $a$ adalah bilangan real positif dan $a^2+\\frac{1}{a^2}=14$,</p>
                         <p class="mb-2">maka $a^3+\\frac{1}{a^3} = ...$</p>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 mt-3">
-                            <button onclick="checkAnswer($1, '$2', event)" class="answer-btn w-full min-h-12 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">A. 47</button>
-                            <button onclick="checkAnswer($1, '$2', event)" class="answer-btn w-full min-h-12 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">B. 52</button>
-                            <button onclick="checkAnswer($1, '$2', event)" class="answer-btn w-full min-h-12 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">C. 56</button>
-                            <button onclick="checkAnswer($1, '$2', event)" class="answer-btn w-full min-h-12 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">D. 64</button>
+                        <div class="grid grid-cols-2 gap-2 mt-3">
+                            <button onclick="checkAnswer(4, 'A')" class="answer-btn bg-gray-200 hover:bg-red-200 p-2 rounded">A. 47</button>
+                            <button onclick="checkAnswer(4, 'B')" class="answer-btn bg-gray-200 hover:bg-red-200 p-2 rounded">B. 52</button>
+                            <button onclick="checkAnswer(4, 'C')" class="answer-btn bg-gray-200 hover:bg-red-200 p-2 rounded">C. 56</button>
+                            <button onclick="checkAnswer(4, 'D')" class="answer-btn bg-gray-200 hover:bg-red-200 p-2 rounded">D. 64</button>
                         </div>
                     </div>
                 `,
@@ -250,7 +250,7 @@
                         <div class="space-y-2 text-sm">
                             <p><strong>Diketahui:</strong> $a^2 + \\frac{1}{a^2} = 14$</p>
                             <p><strong>Langkah 1:</strong> Cari nilai $a + \\frac{1}{a}$</p>
-                            <p>$(a + \\frac{1}{a})^2 = a^2 + 2 + \\frac{1}{a^2} = 14 + 2 = 16</p>
+                            <p>$(a + \\frac{1}{a})^2 = a^2 + 2 + \\frac{1}{a^2} = 14 + 2 = 16$</p>
                             <p>Karena $a > 0$, maka $a + \\frac{1}{a} = 4$</p>
                             <p><strong>Langkah 2:</strong> Gunakan identitas pangkat 3</p>
                             <p>$a^3 + \\frac{1}{a^3} = (a + \\frac{1}{a})^3 - 3(a + \\frac{1}{a})$</p>
@@ -282,11 +282,11 @@
                         <p class="text-center mb-2">$\\frac{2}{3}x+\\frac{4}{5}y+\\frac{5}{6}z=61$</p>
                         <p class="text-center mb-2">$x+y+z=79$</p>
                         <p class="mb-2">Maka nilai $4y+5z = ...$</p>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 mt-3">
-                            <button onclick="checkAnswer($1, '$2', event)" class="answer-btn w-full min-h-12 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">A. 125</button>
-                            <button onclick="checkAnswer($1, '$2', event)" class="answer-btn w-full min-h-12 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">B. 150</button>
-                            <button onclick="checkAnswer($1, '$2', event)" class="answer-btn w-full min-h-12 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">C. 200</button>
-                            <button onclick="checkAnswer($1, '$2', event)" class="answer-btn w-full min-h-12 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">D. 250</button>
+                        <div class="grid grid-cols-2 gap-2 mt-3">
+                            <button onclick="checkAnswer(5, 'A')" class="answer-btn bg-gray-200 hover:bg-yellow-200 p-2 rounded">A. 125</button>
+                            <button onclick="checkAnswer(5, 'B')" class="answer-btn bg-gray-200 hover:bg-yellow-200 p-2 rounded">B. 150</button>
+                            <button onclick="checkAnswer(5, 'C')" class="answer-btn bg-gray-200 hover:bg-yellow-200 p-2 rounded">C. 200</button>
+                            <button onclick="checkAnswer(5, 'D')" class="answer-btn bg-gray-200 hover:bg-yellow-200 p-2 rounded">D. 250</button>
                         </div>
                     </div>
                 `,
@@ -327,13 +327,13 @@
                 problem: `
                     <div class="bg-gray-50 p-4 rounded-lg mb-4">
                         <p class="mb-2">Nilai $n$ yang memenuhi:</p>
-                        <p class="text-center mb-2">$\\underbrace{2020^n+2020^n+\\dots+2020^n}_{2020\\ \\text{kali}} = 2020^3-2019\\times2020\\times2021$</p>
+                        <p class="text-center mb-2">$\\underbrace{2020^n+2020^n+2020^n+\\dots+2020^n}_{2020\\ \\text{kali}} = 2020^3-2019\\times2020\\times2021$</p>
                         <p class="mb-2">adalah ...</p>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 mt-3">
-                            <button onclick="checkAnswer($1, '$2', event)" class="answer-btn w-full min-h-12 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">A. 0</button>
-                            <button onclick="checkAnswer($1, '$2', event)" class="answer-btn w-full min-h-12 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">B. 1</button>
-                            <button onclick="checkAnswer($1, '$2', event)" class="answer-btn w-full min-h-12 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">C. 2019</button>
-                            <button onclick="checkAnswer($1, '$2', event)" class="answer-btn w-full min-h-12 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">D. 2020</button>
+                        <div class="grid grid-cols-2 gap-2 mt-3">
+                            <button onclick="checkAnswer(6, 'A')" class="answer-btn bg-gray-200 hover:bg-pink-200 p-2 rounded">A. 0</button>
+                            <button onclick="checkAnswer(6, 'B')" class="answer-btn bg-gray-200 hover:bg-pink-200 p-2 rounded">B. 1</button>
+                            <button onclick="checkAnswer(6, 'C')" class="answer-btn bg-gray-200 hover:bg-pink-200 p-2 rounded">C. 2019</button>
+                            <button onclick="checkAnswer(6, 'D')" class="answer-btn bg-gray-200 hover:bg-pink-200 p-2 rounded">D. 2020</button>
                         </div>
                     </div>
                 `,
@@ -375,11 +375,11 @@
                 problem: `
                     <div class="bg-gray-50 p-4 rounded-lg mb-4">
                         <p class="mb-2">Nilai $\\sqrt{(100)(101)(102)(103)+1} = ...$</p>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 mt-3">
-                            <button onclick="checkAnswer($1, '$2', event)" class="answer-btn w-full min-h-12 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">A. 10101</button>
-                            <button onclick="checkAnswer($1, '$2', event)" class="answer-btn w-full min-h-12 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">B. 10201</button>
-                            <button onclick="checkAnswer($1, '$2', event)" class="answer-btn w-full min-h-12 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">C. 10301</button>
-                            <button onclick="checkAnswer($1, '$2', event)" class="answer-btn w-full min-h-12 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">D. 10401</button>
+                        <div class="grid grid-cols-2 gap-2 mt-3">
+                            <button onclick="checkAnswer(7, 'A')" class="answer-btn bg-gray-200 hover:bg-teal-200 p-2 rounded">A. 10101</button>
+                            <button onclick="checkAnswer(7, 'B')" class="answer-btn bg-gray-200 hover:bg-teal-200 p-2 rounded">B. 10201</button>
+                            <button onclick="checkAnswer(7, 'C')" class="answer-btn bg-gray-200 hover:bg-teal-200 p-2 rounded">C. 10301</button>
+                            <button onclick="checkAnswer(7, 'D')" class="answer-btn bg-gray-200 hover:bg-teal-200 p-2 rounded">D. 10401</button>
                         </div>
                     </div>
                 `,
@@ -424,11 +424,11 @@
                         <p class="text-sm mb-1">$B=444\\times777.777-777\\times444.444$</p>
                         <p class="text-sm mb-2">$C=2.345\\times98.769.876-9.876\\times23.452.345$</p>
                         <p class="mb-2">Maka $8A+3B+2C = ...$</p>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 mt-3">
-                            <button onclick="checkAnswer($1, '$2', event)" class="answer-btn w-full min-h-12 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">A. 4</button>
-                            <button onclick="checkAnswer($1, '$2', event)" class="answer-btn w-full min-h-12 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">B. 6</button>
-                            <button onclick="checkAnswer($1, '$2', event)" class="answer-btn w-full min-h-12 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">C. 8</button>
-                            <button onclick="checkAnswer($1, '$2', event)" class="answer-btn w-full min-h-12 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 $1">D. 10</button>
+                        <div class="grid grid-cols-2 gap-2 mt-3">
+                            <button onclick="checkAnswer(8, 'A')" class="answer-btn bg-gray-200 hover:bg-orange-200 p-2 rounded">A. 4</button>
+                            <button onclick="checkAnswer(8, 'B')" class="answer-btn bg-gray-200 hover:bg-orange-200 p-2 rounded">B. 6</button>
+                            <button onclick="checkAnswer(8, 'C')" class="answer-btn bg-gray-200 hover:bg-orange-200 p-2 rounded">C. 8</button>
+                            <button onclick="checkAnswer(8, 'D')" class="answer-btn bg-gray-200 hover:bg-orange-200 p-2 rounded">D. 10</button>
                         </div>
                     </div>
                 `,
@@ -459,7 +459,7 @@
         let currentProblem = null;
         let showingSolution = false;
 
-        function showProblem(num, ev) {
+        function showProblem(num) {
             currentProblem = num;
             showingSolution = false;
             const problem = problems[num];
@@ -470,11 +470,11 @@
             });
             
             // Highlight selected button
-            (ev?.currentTarget || event.target).className = (ev?.currentTarget || event.target).className.replace('bg-gray-400', `bg-${getColor(num)}-600`);
+            event.target.className = event.target.className.replace('bg-gray-400', `bg-${getColor(num)}-600`);
             
             document.getElementById('content').innerHTML = `
                 <div class="max-w-4xl mx-auto">
-                    <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-6">${problem.title}</h2>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">${problem.title}</h2>
                     
                     ${problem.theory}
                     
@@ -502,10 +502,9 @@
             return colors[num - 1];
         }
 
-        function checkAnswer(problemNum, answer, ev) {
+        function checkAnswer(problemNum, answer) {
             const problem = problems[problemNum];
-            const zone = document.getElementById('content');
-            const buttons = zone.querySelectorAll('.answer-btn');
+            const buttons = document.querySelectorAll('.answer-btn');
             
             buttons.forEach(btn => {
                 btn.classList.remove('bg-green-500', 'bg-red-500', 'text-white');
@@ -539,22 +538,16 @@
                 <div class="mt-6">
                     <h3 class="text-xl font-semibold text-gray-700 mb-3">🔍 Penyelesaian Lengkap</h3>
                     ${problem.solution}
-
                 </div>
             `;
             
             showingSolution = true;
-            const sol = document.getElementById('solution-area');
-            if (sol && window.matchMedia && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                sol.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            } 
+            
+            // Re-render MathJax
             if (window.MathJax) {
                 MathJax.typesetPromise();
             }
-            }
         }
-
-
 
         function showFeedback(message, type) {
             const existingFeedback = document.getElementById('feedback');
@@ -576,5 +569,5 @@
             }, 3000);
         }
     </script>
-</body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97776743522ece79',t:'MTc1NjU4OTU3NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
